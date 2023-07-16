@@ -1,6 +1,6 @@
 <?php
 
-$galerie = [
+$oeuvres = [
     [
         "id" => 1,
         "title" => "Dodomu",
@@ -121,5 +121,10 @@ $galerie = [
         "paragraph-complete" => "Curabitur dui odio, porta vel tempor sed, consectetur vitae mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus nec."
     ]
 ];
-
 ?>
+
+<?php foreach ($oeuvres as $oeuvre): ?>
+    <div id="<?php echo $oeuvre['id']; ?>">
+        <img src="<?php echo $oeuvre['image']; ?>" alt="<?php echo $oeuvre['alt']; ?>">
+    </div>
+<?php endforeach; ?>
