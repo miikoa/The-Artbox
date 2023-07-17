@@ -1,0 +1,111 @@
+<?php
+
+$paintings = [
+    [
+        "id" => 1,
+        "image" => "img/clark-van-der-beken.png",
+        "alt" => "Dodomu",
+        "title" => "Dodomu",
+        "paragraph-description" => "Mia Tozerski",
+    ],
+    [
+        "id" => 2,
+        "image" => "img/pawel-czerwinski-3.png",
+        "alt" => "Anaisha Devi",
+        "title" => "Aashaaheen Baadal",
+        "paragraph-description" => "Anaisha Devi",
+
+    ],
+    [
+        "id" => 3,
+        "image" => "img/dan-cristian-padure.png",
+        "alt" => "Andrew Forsythe",
+        "title" => "Nightlife Traffic",
+        "paragraph-description" => "Andrew Forsythe",
+    ],
+    [
+        "id" => 4,
+        "image" => "img/steve-johnson-5.png",
+        "alt" => "Simon Pelletier",
+        "title" => "Le refuge de l'Havre",
+        "paragraph-description" => "Simon Pelletier",
+    ],
+    [
+        "id" => 5,
+        "image" => "img/steve-johnson.png",
+        "alt" => "Kit Van Der Borght",
+        "title" => "Red Washover",
+        "paragraph-description" => "Kit Van Der Borght",
+    ],
+    [
+        "id" => 6,
+        "image" => "img/pawel-czerwinski.png",
+        "alt" => "Jean-Michel Delatronchette",
+        "title" => "Chromatics",
+        "paragraph-description" => "Jean-Michel Delatronchette",
+    ],
+    [
+        "id" => 7,
+        "image" => "img/jazmin-quaynor.png",
+        "alt" => "Hamish McKee",
+        "title" => "Digital Negative",
+        "paragraph-description" => "Hamish McKee",
+    ],
+    [
+        "id" => 8,
+        "image" => "img/steve-johnson-6.png",
+        "alt" => "Juliette Baskerville",
+        "title" => "Blast from the past",
+        "paragraph-description" => "Juliette Baskerville",
+    ],
+    [
+        "id" => 9,
+        "image" => "img/victor-grabarczyk.png",
+        "alt" => "Natalie Wellington",
+        "title" => "Hurricane",
+        "paragraph-description" => "Natalie Wellington",
+    ],
+    [
+        "id" => 10,
+        "image" => "img/pawel-czerwinski-2.png",
+        "alt" => "Martin Rodriguez",
+        "title" => "La marée rouge",
+        "paragraph-description" => "Martin Rodriguez",
+    ],
+    [
+        "id" => 11,
+        "image" => "img/steve-johnson-2.png",
+        "alt" => "Angel Sanchez-Fernandez",
+        "title" => "Asimilacion",
+        "paragraph-description" => "Angel Sanchez-Fernandez",
+    ],
+    [
+        "id" => 12,
+        "image" => "img/fly-d.png",
+        "alt" => "Eduardo Tancredi",
+        "title" => "La Galaxia Gialla",
+        "paragraph-description" => "Eduardo Tancredi",
+    ],
+    [
+        "id" => 13,
+        "image" => "img/orfeas-green.png",
+        "alt" => "Sandro De Blasi",
+        "title" => "Puffy Amalgamate",
+        "paragraph-description" => "Sandro De Blasi",
+    ],
+    [
+        "id" => 14,
+        "image" => "img/steve-johnson-4.png",
+        "alt" => "Stéphanie Kaiser",
+        "title" => "Mirage",
+        "paragraph-description" => "Stéphanie Kaiser",
+    ],
+    [
+        "id" => 15,
+        "image" => "img/steve-johnson-3.png",
+        "alt" => "Adelheid Von Schreiber",
+        "title" => "Blaue Gelbe Muster",
+        "paragraph-description" => "Adelheid Von Schreiber",
+    ]
+];
+?>
