@@ -47,27 +47,7 @@
                 </div>
             </article>
         </div>
-
-
-        <!--in the above code, I am checking to see if the id exists and if the $id
-            is a number.  after, to be safe, I am making the id a number and storing this information in the superglobal.--!>
-     
-             
-            
-   
-               
-            <!-- <article class="oeuvre">
-                <a href="oeuvre.php?id=1">
-                    <img src="img/clark-van-der-beken.png" alt="Dodomu">
-                    <h2>Dodomu</h2>
-                    <p class="description">Mia Tozerski</p>
-                </a>
-            </article> -->
-
-        <!-- WRITE HERE THE PHP CODE TO GENERATE DYNAMICS OEUVRE PAGES -->
-        <!-- USE GET PHP TO IDENTIFY THE ID IN THE URL -->
     </main>
-
     <?php include('footer.php'); ?>
 </body>
 
