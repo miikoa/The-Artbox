@@ -16,22 +16,27 @@
 
     <main>
         <div id="liste-oeuvres">
-        <?php foreach ($paintings as $painting): ?>
-            <article class="oeuvre">
-                <a href="oeuvre.php?id=<?php echo $painting['id']; ?>">
-                    <img src="<?php echo $painting['image']; ?>" alt="<?php echo $painting['alt']; ?>">
-                    <h2><?php echo $painting['title']; ?></h2>
-                    <p class="description"><?php echo $painting['paragraph-description']; ?></p>
-                </a>
-            </article>
-        <?php endforeach; ?>          
-        <!-- <article class="oeuvre">
+            <?php foreach ($paintings as $painting): ?>
+                <article class="oeuvre">
+                    <a href="oeuvre.php?id=<?php echo $painting['id']; ?>">
+                        <img src="<?php echo $painting['image']; ?>">
+                        <h2>
+                            <?php echo $painting['title']; ?>
+                        </h2>
+                        <p class="description">
+                            <?php echo $painting['paragraph-description']; ?>
+                        </p>
+                    </a>
+                </article>
+            <?php endforeach; ?>
+            <!-- <article class="oeuvre">
                 <a href="oeuvre.php?id=1">
                     <img src="img/clark-van-der-beken.png" alt="Dodomu">
                     <h2>Dodomu</h2>
                     <p class="description">Mia Tozerski</p>
                 </a>
             </article> -->
+        </div>
     </main>
 
     <?php include('footer.php'); ?>
