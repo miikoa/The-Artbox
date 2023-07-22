@@ -10,48 +10,41 @@
 </head>
 
 <body>
-
     <?php include('header.php'); ?>
     <?php include('oeuvres.php'); ?>
-
     <main>
-        <div class="oeuvre">
-            <article id="detail-oeuvre">
-                <div id="img-oeuvre">
-                    <?php
-                    if (isset($_GET['id'])) {
-                        $id = $_GET['id'];
-                        $foundPainting = null;
-                        foreach ($paintings as $painting) {
-                            if ($painting['id'] == $id) {
-                                $foundPainting = $painting;
-                                break;
-                            }
-                        }
-                        if ($foundPainting) {
-                            echo '<img src="' . $foundPainting['image'] . '" alt="' . $foundPainting['alt'] . '">';
-                        }
+        <article id="detail-oeuvre">
+            <?php
+            if (isset($_GET['id'])) {
+                $id = $_GET['id'];
+                $foundPainting = null;
+                foreach ($paintings as $painting) {
+                    if ($painting['id'] == $id) {
+                        $foundPainting = $painting;
+                        break;
                     }
-                    ?>
-                </div>
-                <div id="contenu-oeuvre">
-                    <?php
-                    if ($foundPainting) {
-                        echo '<h1>' . $foundPainting['title'] . '</h1>';
-                        echo '<p class="description">' . $foundPainting['paragraph-description'] . '</p>';
-                        echo '<p class="description-complete">' . $foundPainting['paragraph-complete'] . '</p>';
-                    } else {
-                        echo 'Artwork not found.';
-                    }
-                    ?>
-                </div>
-            </article>
-        </div>
+                }
+                if ($foundPainting) {
+                    echo '<div id="img-oeuvre">';
+                    echo '<img src="' . $foundPainting['image'] . '" alt="' . $foundPainting['alt'] . '">';
+                    echo '</div>';
+                    echo '<div class="contenu-oeuvre">';
+                    echo '<h1>' . $foundPainting['title'] . '</h1>';
+                    echo '<p class="description">' . $foundPainting['paragraph-description'] . '</p>';
+                    echo '<p class="description-complete">' . $foundPainting['paragraph-complete'] . '</p>';
+                    echo '</div>';
+                } else {
+                    echo 'Artwork not found.';
+                }
+            }
+            ?>
+        </article>
     </main>
     <?php include('footer.php'); ?>
 </body>
 
 </html>
+
 <!-- This is the layout copied from the oeuvre source code
 <main>
     <article id="detail-oeuvre">
