@@ -28,7 +28,7 @@
                     echo '<div id="img-oeuvre">';
                     echo '<img src="' . $foundPainting['image'] . '" alt="' . $foundPainting['alt'] . '">';
                     echo '</div>';
-                    echo '<div class="contenu-oeuvre">';
+                    echo '<div id="contenu-oeuvre">';
                     echo '<h1>' . $foundPainting['title'] . '</h1>';
                     echo '<p class="description">' . $foundPainting['paragraph-description'] . '</p>';
                     echo '<p class="description-complete">' . $foundPainting['paragraph-complete'] . '</p>';
